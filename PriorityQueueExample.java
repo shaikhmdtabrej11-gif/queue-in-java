@@ -1,0 +1,19 @@
+import java.util.PriorityQueue;
+import java.util.Queue;
+
+public class PriorityQueueExample {
+    public static void main(String[] args) {
+        Queue<Integer> queue = new PriorityQueue<>();
+
+        queue.offer(40);
+        queue.offer(10);
+        queue.offer(30);
+        queue.offer(20);
+
+        System.out.println("Elements in Priority Order:");
+
+        while (!queue.isEmpty()) {
+            System.out.println(queue.poll());
+        }
+    }
+}
